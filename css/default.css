@@ -1,0 +1,52 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,
+dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,
+header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin:0; padding:0; border:0; font:inherit; vertical-align:baseline; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+/*对所有样式使用box-sizing:border-box以便在使用DIV布局时，可以使用百分比来分隔空间*/
+*,*:after,*:before {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+/*将网页字体大小调�?62.5%，那么就�?10px，后面如果想设置14px时，只用设置字体大小�?1.4em就可以了，��无霢�再用1em=16px为单位进行换算��?*/
+html{ height:100%;}
+body {font-family:'sans-serif', Calibri, Arial, sans-serif; color:#3c3c3c; height:100%;}
+ol,ul,li,ins{list-style:none}
+table {}
+caption,th,td {text-align:left; vertical-align:middle;}
+a img{border: none;}
+a,ins{color:#3c3c3c; text-decoration:none; }
+
+.clearfix:before, .clearfix:after {content: " "; display: table;}
+.clearfix:after{clear:both;}
+.clear{clear:both;}
+
+.flex-container {
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: box;
+    display: flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+/*引入字体*/
+
+@font-face {
+    font-family: 'fzqkbysjw';
+    src:url('../font/fzqkbysjw.TTF');
+    /*src:url('../fonts/NotoSansCJKsc-Regular.ttf') format('truetype'),*/
+    /*url('../fonts/NotoSansCJKsc-Regular.eot') format('eot'),*/
+    /*url('../fonts/NotoSansCJKsc-Regular.woff') format('woff'),*/
+    /*url('../fonts/NotoSansCJKsc-Regular.svg#normal') format('svg');*/
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+@font-face {
+    font-family: 'Brown-Light';
+    src:url('../fonts/Brown-Light.otf');
+    src:url('../fonts/Brown-Light.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}*/
